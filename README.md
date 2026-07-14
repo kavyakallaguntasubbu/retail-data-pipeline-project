@@ -1,5 +1,6 @@
 # retail-data-pipeline-project 
 OVERVIEW :
+Built an end-to-end retail data pipeline using Python, Pandas, and MySQL, enabling analytical insights on sales performance across regions and customers.
 This project demonstrates a mini end-to-end Data Engineering pipeline using MySQL and Python on a retail dataset.
 The pipeline includes:
 Data ingestion from CSV (Kaggle Superstore dataset)
