@@ -16,16 +16,10 @@ Tech Stack :
 PROJECT STRUCTURE:
 retail-data-pipeline-project/
 │
-├── data/
-│   └── superstore.csv
-│
-├── sql/
-│   └── analysis.sql
-│
-├── python/
-│   └── pipeline.py
-│
-├── README.md 
+├── superstore.csv       # Raw dataset
+├── analysis.sql         # SQL transformation & analysis queries
+├── pipeline.py          # Python script for ingestion/extraction
+├── README.md
 
 Pipeline Workflow :
 1. Data Ingestion
