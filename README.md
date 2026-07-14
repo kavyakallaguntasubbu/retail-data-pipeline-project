@@ -55,9 +55,13 @@ FROM superstore;
 Python Pipeline:
 import mysql.connector
 import pandas as pd
-conn = mysql.connector.connect(
-    host="localhost",
-    user="root",
-    password="your_password",
-    database="my_project"
-)
+import os
+from dotenv import load_dotenv
+load_dotenv()
+DB_CONFIG = {
+    "host": os.getenv("DB_HOST"),
+    "user": os.getenv("DB_USER"),
+    "password": os.getenv("DB_PASSWORD"),
+    "database": os.getenv("DB_NAME")
+}
+conn = mysql.connector.connect(**DB_CONFIG)
